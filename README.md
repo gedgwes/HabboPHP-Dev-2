@@ -10,5 +10,5 @@ Redesign of the architecture
 * URL d'erreur : http://adresse_de_votre_site.ext/shop.php?nomoney
 
 # Allopass
-*URL d'accès au produit : http://votresite.com/modules/paiement/Allopass_paiementValide.php
+* URL d'accès au produit : http://votresite.com/modules/paiement/Allopass_paiementValide.php
 
