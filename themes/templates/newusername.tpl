@@ -1,4 +1,4 @@
-{config_load file="lang/{$lang}.lang"}
+
 <style>
 label{
 	width: 150px;

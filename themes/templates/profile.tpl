@@ -1,4 +1,3 @@
-{config_load file="{$lang_dir}/{$lang}.lang"} 
 <div id="container">
 	<div id="content" style="position: relative" class="clear fix">
     <div>

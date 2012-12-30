@@ -1,4 +1,3 @@
-{config_load file="{$lang_dir}/{$lang}.lang"} 
 <div id="column3" class="column">
 		
 

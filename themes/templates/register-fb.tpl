@@ -1,4 +1,3 @@
-{config_load file="lang/{$lang}.lang"}
 <body id="client" class="background-captcha">
 <div id="stepnumbers">
     <div class="step1focus">{#register_look_and_pseudo#}</div>

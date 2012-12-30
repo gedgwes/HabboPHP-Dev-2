@@ -1,4 +1,3 @@
-{config_load file="lang/{$lang}.lang"}
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="{$config->url_site}/web-gallery/js/jquery.dataTables.min.js" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8">
