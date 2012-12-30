@@ -132,7 +132,7 @@ jQuery.noConflict();
 <img id="f7" src="http://www.habbr.info/habbo-imaging/avatarimage?figure={$item.look}&direction=6&head_direction=6&gesture=std&size=l&img_format=gif" />
 <img id="f8" src="http://www.habbr.info/habbo-imaging/avatarimage?figure={$item.look}&direction=7&head_direction=7&gesture=std&size=l&img_format=gif" />
 </div>
-<img src="http://www.habbo.com/habbo-imaging/avatarimage?figure={$item.look}&direction=3&head_direction=3&gesture=std&size=l&img_format=gif" id="one{$item.id}" /><br/>
+<img src="http://www.habbr.info/habbo-imaging/avatarimage?figure={$item.look}&direction=3&head_direction=3&gesture=std&size=l&img_format=gif" id="one{$item.id}" /><br/>
 <b style="width:60px;word-wrap: break-word;">{$item.username}</b><br /><br/></div></a>
 					 
 				
