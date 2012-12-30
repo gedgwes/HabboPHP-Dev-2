@@ -141,8 +141,8 @@ if(isset($_SESSION['uid']) && !empty($_SESSION['uid']) && is_numeric($_SESSION['
 //Configuration smarty
 $tpl->force_compile = true ; //TRUE : Developpement ; FALSE : Production
 //$tpl->cache_lifetime = 900; //Temps d'expiration du cache en seconde
-$tpl->compile_check = true;
-$tpl->debugging = true; 
+$tpl->compile_check = false;
+$tpl->debugging = false; 
 $tpl->debugging_ctrl = 'NONE'; // 'NONE' on production
 $tpl->caching = false;
 

@@ -1,4 +1,3 @@
-{config_load file="lang/{$lang}.lang"}
 <body id="client" class="background-captcha">
 <div id="stepnumbers">
     <div class="step1">{#register_bean_and_gender#}</div>

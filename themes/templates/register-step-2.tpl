@@ -1,4 +1,3 @@
-{config_load file="lang/{$lang}.lang"}
 <body id="client" class="background-accountdetails-male">
 <div id="overlay"></div>
 <div id="stepnumbers">

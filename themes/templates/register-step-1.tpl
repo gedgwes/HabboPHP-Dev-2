@@ -1,4 +1,3 @@
-{config_load file="lang/{$lang}.lang"}
 <script type="text/javascript">
 function changeGender(gender){
      document.getElementById("avatarGender").value = gender ;
