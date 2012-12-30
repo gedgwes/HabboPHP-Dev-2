@@ -294,14 +294,14 @@ $admin=true;
 					<div style="<?php if($config->starpassacc!="" AND $config->starpassdoc!="" ) { ?>display:none;<?php } ?>" class="form-actions" id="starpassa"><a href="javascript:void(0);" onclick="$('#starpassa').hide();$('#starpassform').show();" class="btn btn-success"><?php echo $lang['Activate']; ?></a></div>
 				<div id="starpassform" style="<?php if($config->starpassacc=="" AND $config->starpassdoc=="" ) { ?>display:none;<?php } ?>">
 					<div class="control-group">
-           			  <label class="control-label" for="input01"><?php echo $lang['StarpassAccount']; ?> (IDP)</label>
+           			  <label class="control-label" for="input01"><?php echo $lang['StarpassAccount']; ?> (IPP)</label>
         		      <div class="controls">
           			    <input type="text" class="input-xlarge" value="<?php echo $config->starpassacc; ?>" id="starpassacc">
           			  </div>
           			</div>
           			
 					<div class="control-group">
-           			  <label class="control-label" for="input01"><?php echo $lang['StarpassDocument']; ?> (IDD)</label>
+           			  <label class="control-label" for="input01"><?php echo $lang['StarpassDocument']; ?> (IDP)</label>
         		      <div class="controls">
           			    <input type="text" class="input-xlarge" value="<?php echo $config->starpassdoc; ?>" id="starpassdoc">
           			  </div>
