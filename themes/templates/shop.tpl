@@ -1,5 +1,5 @@
 <input type="hidden" name="token" value="{$token}" id="token"/>
-<script type="text/javascript" src="themes/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="web-gallery/js/vip.js"></script>
 <script>
 	jQuery.noConflict();
