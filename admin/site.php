@@ -418,7 +418,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js"&gt;
         <select id="lang">
         	<option value="<?php echo $config->lang; ?>"><?php echo $config->lang; ?></option>
         	<?php
-        	$dirname = '../lang/';
+        	$dirname = '../modules/lang/';
 			$dir = opendir($dirname);
         	while($file = readdir($dir)) {
 				if($file != '.' && $file != '..' && !is_dir($dirname.$file)) {
