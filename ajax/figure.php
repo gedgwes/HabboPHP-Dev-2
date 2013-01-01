@@ -7,7 +7,7 @@ function generateFigure($club=null,$gender=null){
 //Please do not remove this :-)
 	if($gender == null){ if(rand(0,1) == 0){ $gender = "M"; }else{ $gender = "F"; } }
 	if($club == null){ $club = (bool) rand(0,1); }
-	$xml = simplexml_load_file('../xml/figuredata.xml');
+	$xml = simplexml_load_file('../includes/figuredata.xml');
 	$figure = "";
 	foreach($xml->sets->settype as $settype){
 		if((string) $settype['mandatory'] == "1" || rand(0,1) == 1){
