@@ -35,22 +35,7 @@ $pagename=$parts[count($parts) - 1];
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
-	<!--<?php
-	$cible = "../images/news/";
-	$perms = 0777;
-	if ( chmod($cible, $perms) !== TRUE ) {
-	?>
-	  <div class="alert alert-error">
-        <a class="close" data-dismiss="alert">×</a>
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
-	<?php
-	} else {
-	if ($perms != octdec(substr(decoct(fileperms($cible)),2))) {
-			echo 'La permission est erronée !';
-		}
-	}
-	?>-->
+
 
   <!-- Navbar
     ================================================== -->
