@@ -1,4 +1,4 @@
-HabboPHP-Dev-2
+HabboPHP-Dev-2 Free CMS
 ==============
 
 Redesign of the architecture
