@@ -9,9 +9,10 @@ class Rooms{
 		$this->_db = new Db('rooms');
 	}
 	
-	public function getRoomsUser(){
+	public function getRoomsUser($username = null){
 		global $user ;
-		return $this->_db->find(array('conditions' => 'owner = "'.$user->username.'"','fields' => 'owner,id,caption'));
+		$username = ($username == null) ? $user->username : $username ;
+		return $this->_db->find(array('conditions' => 'owner = "'.$username.'"','fields' => 'owner,id,caption'));
 	}
 	
 	public function roomsBelongsToUser($id){

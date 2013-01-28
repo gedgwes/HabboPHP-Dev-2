@@ -1,12 +1,27 @@
 <?php
 @session_start();
 define('CORE','CORE');
-$admin=true;
-include "includes/core.php";
+require "includes/core.php";
 
 if(!$Auth->isConnected()) redirection($config->url_site.'/logout.php');
 if(EMULATOR == 'phoenix') $ticket = TicketRefresh($user->id);
 elseif(EMULATOR == 'butterfly') $ticket = UpdateSSO($user->id);
+$roomask = false ;
+if(isset($_GET['roomID'])){
+	
+	$roomid = intval($_GET['roomID']);
+	//Get type of room
+	$req = mysql_query("SELECT roomtype FROM rooms WHERE id = '".$roomid."' LIMIT 1");
+	if(mysql_num_rows($req) > 1){ //Room exist
+		$roomdata = mysql_fetch_assoc($req);	
+		if($roomdata['roomtype'] == 'public')
+			$forward_type = 1;
+		else
+			$forward_type = 2;
+		$roomask = true ;
+	}
+	
+}
 
 
 ?>
@@ -101,6 +116,12 @@ var flashvars ={
 "user.hash" : "", 
 "has.identity" : "0", 
 "flash.client.origin" : "popup" 
+<?php
+if($roomask){
+echo '"forward.type" : "'.$forward_type.'",';
+echo '"forward.id" : "'.$roomid.'",';
+}
+?>
 };
     var params ={
         "base" : "<?php echo $config->server_swf; ?>",

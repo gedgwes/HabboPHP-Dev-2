@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-12-29 21:10:28
+<?php /* Smarty version Smarty-3.1.8, created on 2013-01-19 11:52:00
          compiled from "/Users/robinherzog/github/local/HabboPHP-Dev2/themes/templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:28936376050df4e34b50633-49839272%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:158822457450fa7ad0009c81-96704140%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '28936376050df4e34b50633-49839272',
+  'nocache_hash' => '158822457450fa7ad0009c81-96704140',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_50df4e34d8aba8_99117676',
+  'unifunc' => 'content_50fa7ad0281b52_32418065',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_50df4e34d8aba8_99117676')) {function content_50df4e34d8aba8_99117676($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php if ($_valid && !is_callable('content_50fa7ad0281b52_32418065')) {function content_50fa7ad0281b52_32418065($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>

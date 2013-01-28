@@ -148,7 +148,7 @@ if($page == 3){
 			'activity_points' => safe($config->activitypoints_default,'SQL'),
 			'account_created' => FullDate('hc'),
 			'ip_reg'  =>	safe($_SERVER['REMOTE_ADDR'],'HTML'),
-			'last_online' => FullDate('full')
+			'last_online' => time()
 			
 		);
 		
@@ -295,7 +295,7 @@ if(!isset($user_profile)) redirection($config->url_site.'/index.php?error=2');
 					'activity_points' => $config->activitypoints_default,
 					'account_created' => FullDate('hc'),
 					'ip_reg'  =>	safe($_SERVER['REMOTE_ADDR'],'SQL'),
-					'last_online' => FullDate('full')
+					'last_online' => time()
 			
 				);
 				

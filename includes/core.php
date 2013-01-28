@@ -103,6 +103,8 @@ require	$path.'class/class.validate.php' ;
 
 require	$path.'class/rooms.class.php' ;
 
+require	$path.'class/groups.class.php' ;
+
 /*+===================================+
 |   Connexion to database             |
 +===================================+*/

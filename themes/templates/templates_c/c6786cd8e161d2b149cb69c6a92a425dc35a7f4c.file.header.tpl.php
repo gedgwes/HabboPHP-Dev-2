@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-12-30 00:09:05
+<?php /* Smarty version Smarty-3.1.8, created on 2013-01-19 11:52:09
          compiled from "/Users/robinherzog/github/local/HabboPHP-Dev2/themes/templates/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:79378549250df78114b8a33-22619943%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:163881329750fa7ad9442638-83868991%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c6786cd8e161d2b149cb69c6a92a425dc35a7f4c' => 
     array (
       0 => '/Users/robinherzog/github/local/HabboPHP-Dev2/themes/templates/header.tpl',
-      1 => 1355597781,
+      1 => 1356946264,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '79378549250df78114b8a33-22619943',
+  'nocache_hash' => '163881329750fa7ad9442638-83868991',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_50df78117f8351_51461126',
+  'unifunc' => 'content_50fa7ad987c0f9_35044777',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_50df78117f8351_51461126')) {function content_50df78117f8351_51461126($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
+<?php if ($_valid && !is_callable('content_50fa7ad987c0f9_35044777')) {function content_50fa7ad987c0f9_35044777($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -67,9 +67,12 @@ var andSoItBegins = (new Date()).getTime();
 /web-gallery/js/lightweightmepage.js" type="text/javascript"></script>
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/js/moredata.js" type="text/javascript"></script>
-
-
-
+<script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery/js/homeedit.js" type="text/javascript"></script>
+<script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery/js/homeview.js" type="text/javascript"></script>
+<script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery/js/homeauth.js" type="text/javascript"></script>
 
 <!--End Javascript-->
 
@@ -93,7 +96,50 @@ var andSoItBegins = (new Date()).getTime();
 <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/styles/lightweightmepage.css" type="text/css" />
 <!--End Stylesheet-->
+<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery/styles/group.css" type="text/css" />
 
+
+
+<!-- Uber style overrides --> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/styles/myhabbo/skins.css" type="text/css" /> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/styles/myhabbo/dialogs.css" type="text/css" /> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/styles/myhabbo/buttons.css" type="text/css" /> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/styles/myhabbo/control.textarea.css" type="text/css" /> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/styles/myhabbo/boxes.css" type="text/css" />
+<link href="http://habbo.fr/myhabbo/styles/assets/backgrounds.css?v=ea94443d10aaedf816393a144f4c0164" type="text/css" rel="stylesheet" /> 
+<link href="http://habbo.fr/myhabbo/styles/assets/stickers.css?v=09991b1a03621a9a16adf9f4fe5d0009" type="text/css" rel="stylesheet" />
+<link href="http://habbo.fr/myhabbo/styles/assets/other.css?v=44a13f2cf6bc653b3c96488813634f63" type="text/css" rel="stylesheet" /> 
+ <!--
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/static/js/homeview.js" type="text/javascript"></script> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/static/styles/lightwindow.css" type="text/css" /> 
+
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/static/js/homeauth.js" type="text/javascript"></script> 
+-->
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/static/styles/group.css" type="text/css" /> 
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1458/web-gallery/static/styles/home.css" type="text/css" /> 
+
+<script type="text/javascript"> 
+var andSoItBegins = (new Date()).getTime();
+var ad_keywords = "";
+document.habboLoggedIn = true;
+var habboName = "";
+var habboId = 134512;
+var facebookUser = false;
+var habboReqPath = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/modules";
+var habboStaticFilePath = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery";
+var habboImagerUrl = "http://www.habbo.com/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/client";
+window.name = "habboMain";
+if (typeof HabboClient != "undefined") {
+HabboClient.windowName = "57a07a19b77f0d8ced3676b28bff848bd33560a3";
+HabboClient.maximizeWindow = true;
+}
+</script> 
 
 <style type="text/css">
 
@@ -137,29 +183,35 @@ body { behavior: url(/js/csshover.htc); }
 	<div id="header" class="clearfix">
 		<h1><a href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /me.php"></a></h1>
-<div id="subnavi" class="narrow">
-    <div id="subnavi-search">
-        <div id="subnavi-search-upper" >
-        <ul id="subnavi-search-links" >
-                <li><a href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
-/help" target="habbohelp" ><?php echo $_smarty_tpl->getConfigVariable('HelpMe');?>
-</a></li>
-                         <li>
-                <form action="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
-/logout.php" method="post">
-                    <button type="submit" id="sign out" class="link"><span><?php echo $_smarty_tpl->getConfigVariable('Logout');?>
-</span></button>
-                </form>
-            </li>
-        </ul>
-        </div>
-    </div>
-    <div id="to-hotel">
-                <a href="client.php" class="new-button green-button" target="5582b925d39a3b57fc3e178ad726bd2798015099" onclick="HabboClient.openOrFocus(this); return false;"><b><?php echo $_smarty_tpl->getConfigVariable('Enterin');?>
+<div id="subnavi"> 
+			<div id="subnavi-user"> 
+							<ul> 
+					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
+					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
+				</ul> 
+						</div> 
+			            <div id="subnavi-search"> 
+                <div id="subnavi-search-upper"> 
+                <ul id="subnavi-search-links"> 
+                    <li><a href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/help" target="_new">Questions fréquentes</a></li> 
+					<li>
+					<form method="post" action="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/logout.php">
+                     <button class="link" id="signout" type="submit"><span>Quitter</span></button>
+                    </form>
+					</li> 
+				</ul> 
+                </div> 
+            </div> 
+            <div id="to-hotel"> 
+					   <a href="client.php" class="new-button green-button" target="5582b925d39a3b57fc3e178ad726bd2798015099" onclick="HabboClient.openOrFocus(this); return false;"><b><?php echo $_smarty_tpl->getConfigVariable('Enterin');?>
  <?php echo $_smarty_tpl->tpl_vars['config']->value->name;?>
-</b><i></i></a>
-    </div>
-</div>
+</b><i></i></a> 
+						
+						</div>            
+        </div>
 <ul id="navi">
         <li class="metab <?php if ($_smarty_tpl->tpl_vars['groups']->value=='index'){?>selected<?php }?>">
 		<a   href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>

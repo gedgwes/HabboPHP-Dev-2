@@ -11,6 +11,8 @@ class Db{
     
     public $id;
     
+    var $index_update = 'id' ;
+    
     private $query ;
     
     public $queryR ;
@@ -70,7 +72,7 @@ class Db{
      * @param $data Donnée à sauvegarder
      * */
     public function save($data){
-        if(isset($data["id"]) && !empty($data["id"])){
+        if(isset($data[$this->index_update]) && !empty($data[$this->index_update])){
             $sql = "UPDATE ".$this->table." SET ";
             foreach($data as $k=>$v){
                 if($k!="id"){
@@ -78,16 +80,16 @@ class Db{
                 }
             }
             $sql = substr($sql,0,-1);
-            $sql .= "WHERE id=".$data["id"];
+            $sql .= "WHERE ".$this->index_update."=".$data["id"];
         }
         else{
-            $sql = "INSERT INTO ".$this->table."(";
+            $sql = "INSERT INTO ".$this->table." (";
             unset($data["id"]);
             foreach($data as $k=>$v){
            		 	$k = safe($k,'SQL');
             		$v = safe($v,'SQL');
             		
-                    $sql .= "$k,";
+                    $sql .= "`$k`,";
             }
             $sql = substr($sql,0,-1);
             $sql .=") VALUES (";
@@ -98,6 +100,9 @@ class Db{
             $sql = substr($sql,0,-1);
             $sql .= ")";
         }
+        
+
+        
         if(mysql_query($sql)){
         	
         	if(!isset($data["id"])){

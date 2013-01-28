@@ -6,7 +6,7 @@
 #|         Copyright © 2012 Valentin & Robin. All rights reserved.        #|
 #|																		  #|
 #|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
-
+define('AUTH','AUTH');
 require 'init.php' ;
 
 $tpl->assign('groups','community');
