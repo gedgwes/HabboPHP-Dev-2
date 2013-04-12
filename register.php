@@ -196,14 +196,15 @@ Facebook::$CURL_OPTS[CURLOPT_SSL_VERIFYHOST] = 2;
 // Get User ID
 $user = $facebook->getUser();
 
-
 if ($user) {
   try {
     // Proceed knowing you have a logged in user who's authenticated.
     $user_profile = $facebook->api('/me');
+	$_SESSION['fb'] = $user_profile ;
   } catch (FacebookApiException $e) {
-    error_log($e);
-    $user = null;
+   // echo $e->getMessage();
+//	echo '<br/>';
+//	echo $e->getType();
   }
 }
 
@@ -214,9 +215,9 @@ if ($user) {
 } else {
 }
 
+$user_profile = $_SESSION['fb'];
 
-
-if(!isset($user_profile)) redirection($config->url_site.'/index.php?error=facebook_data_empty');
+//if(!isset($user_profile)) redirection($config->url_site.'/index.php?error=facebook_data_empty');
 
 	if(isset($user_profile['id'])){
 	

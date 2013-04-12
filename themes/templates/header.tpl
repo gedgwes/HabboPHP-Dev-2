@@ -121,13 +121,13 @@ body { behavior: url(/js/csshover.htc); }
 		<h1><a href="{$config->url_site}/me.php"></a></h1>
 <div id="subnavi"> 
 			<div id="subnavi-user"> 
-							<ul> 
-					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
-					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+				<ul> 
+					<li id="myfriendsNOT"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
+					<li id="mygroupsNOT" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
 					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
 				</ul> 
 						</div> 
-			            <div id="subnavi-search"> 
+			            <div id="subnavi-search" style="text-align:left;"> 
                 <div id="subnavi-search-upper"> 
                 <ul id="subnavi-search-links"> 
                     <li><a href="{$config->url_site}/help" target="_new">Questions fréquentes</a></li> 
