@@ -6,7 +6,7 @@ class Config{
 
 	public function __construct(){
 	
-		$this->_db = new Db();
+		$this->_db = new Db('habbophp_config');
 	
 		$getConfig = $this->_db->query('SELECT * FROM  habbophp_config',true);
 		foreach($getConfig as  $data){
@@ -17,10 +17,27 @@ class Config{
 	}
 	
 	public function editConfig($name,$value){
-		if($this->_db->query("UPDATE habbophp_config SET value='".safe($value,'SQL')."' WHERE name='".safe($name,'SQL')."'"))
+		if($this->configExist($name)){
+			if($this->_db->query("UPDATE habbophp_config SET value='".safe($value,'SQL')."' WHERE name='".safe($name,'SQL')."'"))
+				return true;
+			
+		}else{
+			//$this->_db->save(array('name' => safe($name) , 'value' => safe($value)));
+		}
+		return false;
+	}
+	
+	/**
+	Check if config is existing
+	**/
+	
+	public function configExist($name){
+		$req = mysql_query("SELECT value FROM habbophp_config WHERE name='".safe($name,'SQL')."'");
+		$data = mysql_fetch_assoc($req);
+		if($data['value'] != null){
 			return true;
-		else
-			return false ;
+		}
+		return false;
 	}
 	
 	public function checkUpdatePath(){

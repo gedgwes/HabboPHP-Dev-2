@@ -325,5 +325,7 @@ $lang=array(
 	"Description" => "Meta Description",
 	"DescriptionInfo" => "Décrivez votre hotel",
 	"WelcomeMessage" => "Message d'index",
-	"WelcomeMessageInfo" => "Personnalisez le message d'accueil de votre site" 
+	"WelcomeMessageInfo" => "Personnalisez le message d'accueil de votre site",
+	"IndexDescMessage" => "Index information",
+	"IndexDescMessageInfo" => "Bouton index : Dis-m'en plus.."
  );

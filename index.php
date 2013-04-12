@@ -56,5 +56,5 @@ if(isset($_GET['error'])){
 
 
 $tpl->assign('token',Tools::generate_token());
-$tpl->display('index.tpl');
+$tpl->display('index-v2.tpl');
 ?>

@@ -256,8 +256,10 @@ function setconfig(value,type) {
 		} else {
 			if(data == 'ERRORTOKEN'){
 				alert('<?php echo $lang['ErrorToken']; ?>');	
+				console.log(data);
 			}else
 			alert('<?php echo $lang['Error']; ?>');
+			console.log(data);
 		}
 	});
 }

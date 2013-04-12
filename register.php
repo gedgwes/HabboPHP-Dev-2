@@ -179,7 +179,7 @@ if($page == 3){
 
 if($page == 4){
 
-if(!extension_loaded('curl')) redirection($config->url_site.'/index.php?error=facebook_extension');
+if(!extension_loaded('curl')) redirection($config->url_site.'/index.php?error=facebook_extension_curl');
 
 $config->checkMaintenance();
 // Create our Application instance (replace this with your appId and secret).
@@ -216,7 +216,7 @@ if ($user) {
 
 
 
-if(!isset($user_profile)) redirection($config->url_site.'/index.php?error=2');
+if(!isset($user_profile)) redirection($config->url_site.'/index.php?error=facebook_data_empty');
 
 	if(isset($user_profile['id'])){
 	

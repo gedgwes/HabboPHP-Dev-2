@@ -1,4 +1,6 @@
-<?php include "includes/header.php";  ?>
+<?php 
+include "includes/header.php"; 
+ ?>
 
 <header class="jumbotron subhead" id="overview">
   <h1><?php echo $lang['Website']; ?></h1>
@@ -494,6 +496,21 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js"&gt;
       </div>
     </div>
   </div>
+  
+  <div class="row">
+    <div class="span3">
+      <h3><?php echo $lang['IndexDescMessage']; ?></h3>
+      <p><?php echo $lang['IndexDescMessageInfo']; ?></p>
+    </div>
+    <div class="span9">
+      <div class="well">
+		<textarea style="width:100%;height:100px" id="desc_index"><?php echo $config->desc_index; ?></textarea>
+
+        <button type="button" onclick="setconfig($('#desc_index').val(),'desc_index');" class="btn"><?php echo $lang['Update']; ?></button>
+      </div>
+    </div>
+  </div>
+  
    <div class="row">
     <div class="span3">
       <h3><?php echo $lang['Comments']; ?></h3>

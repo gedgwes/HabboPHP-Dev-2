@@ -107,10 +107,10 @@ INSERT INTO `habbophp_config` (`id`, `name`, `value`) VALUES
 
 INSERT INTO `habbophp_config` VALUES(60, 'botsprix', '50');
 INSERT INTO `habbophp_config` VALUES(61, 'lookbots', 'hr-115-42.hd-190-1.ch-215-62.lg-285-91.sh-290-62');
-
 INSERT INTO `habbophp_config` VALUES(58, 'winwin', '10000');
 INSERT INTO `habbophp_config` VALUES(59, 'winwinprix', '100');
 INSERT INTO `habbophp_config` VALUES(59, 'server_base', '100');
+INSERT INTO `habbophp_config` VALUES('','desc_index', '');
 
 CREATE TABLE `habbophp_shop_rares` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
