@@ -2,8 +2,9 @@ jQuery(document).ready(function(){
 	jQuery('#change-password-submit-button').click(function(){
        		var mail = jQuery('#change-password-email-address2').val();
        		var token = jQuery('#token').val();
+			
        		jQuery.get('ajax/password_forgotten.php?mail='+mail+'&token='+token,function(data){
-       			//alert(data);
+       			console.log(data);
        			if(data == 'ok'){
        				jQuery('#forgotten-pw-form ,#change-password-submit-button').slideUp();
        				jQuery('#forgotten-success').delay(300).slideDown('slow');

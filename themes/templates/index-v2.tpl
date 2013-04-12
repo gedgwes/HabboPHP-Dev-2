@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Habbo: Crée ton avatar, décore ton appart, chatte et fais-toi plein d'amis. </title>
+    <title>{$config->name}</title>
     <meta name="viewport" content="width=device-width">
 
     <script>
@@ -15,15 +15,18 @@
         var habboPageInitQueue = [];
         var habboStaticFilePath = "https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery";
     </script>
-    <link rel="shortcut icon" href="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon" />
-
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic">
 
-<link rel="stylesheet" href="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/styles/v3_landing.css" type="text/css" />
-<script src="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/v3_landing_top.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/v3_landing.css" type="text/css" />
+<script src="{$config->url_site}/web-gallery/js/v3_landing_top.js" type="text/javascript"></script>
 
-        <meta name="description" content="Habbo Hotel - fais-toi plein d'amis, deviens célèbre! Séjourne GRATUITEMENT dans le plus grand hôtel virtuel au monde! Crée ton avatar pour jouer et faire de nouvelles rencontres..." />
-        <meta name="keywords" content="habbo hotel, virtuel, monde, réseau social, gratuit, communauté, avatar, chat, connecté, adolescence, jeu de rôle, rejoindre, social, groupes, forums, sécurité, jouer, jeux, amis, rares, ados, jeunes, collector, collectionner, créer, connecter, meuble, mobilier, animaux, déco, design, appart, décorer, partager, création, badges, musique, célébrité, chat vip, fun, sortir, mmo, mmorpg, jeu massivement multijoueur" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{$config->url_site}/web-gallery/js/password.js" type="text/javascript"></script>
+
+
+        <meta name="description" content="{$config->meta_description}" />
+        <meta name="keywords" content="{$config->meta_keywords}" />
 
 
     <meta name="build" content="63-BUILD2051 - 02.04.2013 23:19 - fr" />
@@ -38,11 +41,12 @@
     <div id="change-password-form-container" class="clearfix form-container">
         <h2 id="change-password-form-title" class="bottom-border">Mot de passe oublié?</h2>
         <div id="change-password-form-content" style="display: none;">
-            <form method="post" action="https://www.habbo.fr/account/password/identityResetForm" id="forgotten-pw-form">
+            <form method="post" action="" id="forgotten-pw-form">
                 <input type="hidden" name="page" value="/?changePwd=true" />
                 <span>Merci d'indiquer ton adresse email d'inscription à Habbo</span>
                 <div id="email" class="center bottom-border">
-                    <input type="text" id="change-password-email-address" name="emailAddress" value="" class="email-address" maxlength="48"/>
+				<input type="hidden" name="token" id="token" value="{$token}"/>
+                    <input type="text" id="change-password-email-address2" name="emailAddress" value="" class="email-address" maxlength="48"/>
                     <div id="change-password-error-container" class="error" style="display: none;">Indique une adresse email valide</div>
                 </div>
             </form>
@@ -234,7 +238,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
                 <a href="{$config->url_site}/register.php" class="button large" id="join-now-button"><b></b><span>Rejoins-nous aujourd'hui</span><span class="sub">(C'est gratuit)</span></a>
                 <div id="slogan">
                     <h1>Bienvenue à {$config->name},</h1>
-                    <p>un endroit étrange avec des gens trop cools.</p>
+                    <p>{$config->welcome_message|stripslashes}.</p>
                     <p><a id="tell-me-more-link" href="#">Dis-m'en plus...</a></p>
                 </div>
             </div>
@@ -242,7 +246,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
                 <div id="image1"></div>
                 <div id="image2"></div>
                 <div id="image3"></div>
-                <div id="tell-me-more">{$config->desc_index}</div>
+                <div id="tell-me-more">{$config->desc_index|stripslashes}</div>
             </div>
             <div id="floaters"></div>
         </li>
@@ -338,7 +342,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
 </footer>
 
 
-<script src="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/v3_landing_bottom.js" type="text/javascript"></script>
+<script src="{$config->url_site}/web-gallery/js/v3_landing_bottom.js" type="text/javascript"></script>
 <!--[if IE]><script src="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/v3_ie_fixes.js" type="text/javascript"></script>
 <![endif]-->
 
