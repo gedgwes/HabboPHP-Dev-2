@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
        			console.log(data);
        			if(data == 'ok'){
        				jQuery('#forgotten-pw-form ,#change-password-submit-button').slideUp();
-       				jQuery('#forgotten-success').delay(300).slideDown('slow');
+       				jQuery('#change-password-email-sent-notice').delay(300).slideDown('slow');
        				jQuery('#email-sent-container').html(mail);
        			}
        			if(data == 'no'){

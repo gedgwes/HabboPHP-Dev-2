@@ -51,7 +51,7 @@
                 </div>
             </form>
             <div class="change-password-buttons">
-                <a href="#" id="change-password-cancel-link">Annuler</a>
+              
                 <a href="#" id="change-password-submit-button" class="new-button"><b>Envoyer un email</b><i></i></a>
             </div>
         </div>
@@ -64,7 +64,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
                 <div id="email-sent-container"></div>
             </div>
             <div class="change-password-buttons">
-                <a href="#" id="change-password-change-link">Autre adresse email</a>
+              
                 <a href="#" id="change-password-success-button" class="new-button"><b>Fermer</b><i></i></a>
             </div>
         </div>

@@ -22,7 +22,7 @@ class Config{
 				return true;
 			
 		}else{
-			//$this->_db->save(array('name' => safe($name) , 'value' => safe($value)));
+			$this->_db->save(array('name' => safe($name) , 'value' => safe($value)));
 		}
 		return false;
 	}
