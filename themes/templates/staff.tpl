@@ -109,7 +109,7 @@ jQuery.noConflict();
 				jQuery(document).ready(function() 
 				{
 				      jQuery("#tt{$item.id}").qtip({
-				         content: "<div style=\'text-align:center;background:{$i.Couleur};color:white;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:7px;\'><b>{$i.Nom}</b></div>{$item.motto}",
+				         content: "<div style=\'text-align:center;background:{$i.Couleur};color:white;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:7px;\'><b>{$i.Nom}</b></div>{$item.motto|escape}",
 				         position: {
 				      		corner: {
 				       		  tooltip: "leftMiddle",
