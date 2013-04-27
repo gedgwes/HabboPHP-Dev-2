@@ -107,7 +107,7 @@ body > img{
 	position:relative;
 	background-color:#fff;
 	display:block;
-	
+	height: 442px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;

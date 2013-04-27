@@ -18,4 +18,15 @@ $(document).ready(function(){
 
 	});
 	
+	//Loader page
+	
+	
 });
+
+function load(page){
+	$.get('ajax/'+page+'.php',function(data){
+		$('#content-ajax').html(data);
+	});
+}
+
+
