@@ -71,8 +71,8 @@ class Db{
      * Sauvegarde les donnée passé en paramètre dans la base de donnée
      * @param $data Donnée à sauvegarder
      * */
-    public function save($data,$update = true){
-        if(isset($data[$this->index_update]) && !empty($data[$this->index_update]) && $update){
+    public function save($data){
+        if(isset($data[$this->index_update]) && !empty($data[$this->index_update])){
             $sql = "UPDATE ".$this->table." SET ";
             foreach($data as $k=>$v){
                 if($k!="id"){
@@ -84,7 +84,7 @@ class Db{
         }
         else{
             $sql = "INSERT INTO ".$this->table." (";
-           if($update == true) unset($data["id"]);
+            unset($data["id"]);
             foreach($data as $k=>$v){
            		 	$k = safe($k,'SQL');
             		$v = safe($v,'SQL');
@@ -100,8 +100,6 @@ class Db{
             $sql = substr($sql,0,-1);
             $sql .= ")";
         }
-        
-        
         
 
         

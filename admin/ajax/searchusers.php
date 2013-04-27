@@ -33,7 +33,7 @@ else
 		<div class="span1 well" style="width:100px">
 			<center>
 			<h3 style="overflow: hidden;"><?php echo safe($username,'HTML'); ?></h3>
-			<img src="http://www.habbr.info/habbo-imaging/avatarimage?figure=<?php echo $row['look'] ; ?>&direction=3&head_direction=3&gesture=sml&action=wav">
+			<img src="http://www.habbo.com/habbo-imaging/avatarimage?figure=<?php echo $row['look'] ; ?>&direction=3&head_direction=3&gesture=sml&action=wav">
 			<a data-toggle="modal" href="#profil<?php echo $id; ?>" style="margin-top:14px;" class="btn btn-primary"><?php echo $lang['Profil']; ?></a>
 			<a data-toggle="modal" href="#ban<?php echo $id; ?>" style="margin-top:14px;" class="btn btn-danger"><?php echo $lang['Ban']; ?></a>
 			<?php if($user->rank>=7){ ?><a data-toggle="modal" href="#badges<?php echo $id; ?>" style="margin-top:14px;" class="btn"><?php echo $lang['Badges']; ?></a><?php } ?>

@@ -17,7 +17,7 @@ $req = $db->query('SELECT pf.* , us.mail FROM  habbophp_password_forgotten pf  L
 if ($db->NumRowsC() == 0) redirection($config->url_site);
 $data = $db->getQuery(true);
 
-
+exit ;
 
 if(time() > $data['expire']){
 	$db->query('DELETE FROM habbophp_password_forgotten WHERE id="'.$data['id'].'"');
