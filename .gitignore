@@ -1,3 +1,4 @@
 *.file.*.tpl.php
 *.fr.lang.config.php
+
 settings.inc.php
