@@ -45,7 +45,7 @@ var andSoItBegins = (new Date()).getTime();
 
 
 
-<!-- Uber style overrides --> 
+<!--
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/styles/myhabbo/skins.css" type="text/css" /> 
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/styles/myhabbo/dialogs.css" type="text/css" /> 
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/styles/myhabbo/buttons.css" type="text/css" /> 
@@ -59,7 +59,7 @@ var andSoItBegins = (new Date()).getTime();
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/styles/lightwindow.css" type="text/css" /> 
 
 <script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/homeauth.js" type="text/javascript"></script> 
--->
+-
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/styles/group.css" type="text/css" /> 
 <link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/styles/home.css" type="text/css" /> 
 
@@ -81,7 +81,7 @@ HabboClient.windowName = "57a07a19b77f0d8ced3676b28bff848bd33560a3";
 HabboClient.maximizeWindow = true;
 }
 </script> 
-
+-->
 <style type="text/css">
 
     #playground, #playground-outer {
