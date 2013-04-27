@@ -94,6 +94,7 @@ class Rooms{
 				
 			}
 			
+			
 			foreach($dom->getElementsByTagName( "roomitem" ) as $room_items){
 					foreach($room_items->getElementsByTagName( "item" ) as $item){
 						$base_item =  $item->getElementsByTagName( "base_item" )->item(0)->nodeValue;
